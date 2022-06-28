@@ -42,6 +42,9 @@ namespace OOPDraw
             this.Canvas.TabIndex = 0;
             this.Canvas.TabStop = false;
             this.Canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.Canvas_Paint);
+            this.Canvas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Canvas_MouseDown);
+            this.Canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Canvas_MouseMove);
+            this.Canvas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Canvas_MouseUp);
             // 
             // OOPDraw
             // 
@@ -51,6 +54,7 @@ namespace OOPDraw
             this.Controls.Add(this.Canvas);
             this.Name = "OOPDraw";
             this.Text = "OOPDraw";
+            this.Load += new System.EventHandler(this.OOPDraw_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Canvas)).EndInit();
             this.ResumeLayout(false);
 

@@ -10,6 +10,7 @@ namespace MetalUpOOP
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
