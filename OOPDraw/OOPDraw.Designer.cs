@@ -93,7 +93,8 @@ namespace OOPDraw
             "Yellow",
             "Green",
             "Blue",
-            "Purple"});
+            "Purple",
+            "Black"});
             this.Colour.Location = new System.Drawing.Point(60, 124);
             this.Colour.Name = "Colour";
             this.Colour.Size = new System.Drawing.Size(121, 21);
@@ -124,7 +125,7 @@ namespace OOPDraw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1562, 645);
+            this.ClientSize = new System.Drawing.Size(1284, 645);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Shape);
             this.Controls.Add(this.Colour);

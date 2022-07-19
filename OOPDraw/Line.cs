@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace OOPDraw
 {
-    public class Line
+    public class Line : Shape
     {
         public Pen Pen { get; private set; }
         public int X1 { get; private set; }
@@ -27,11 +27,11 @@ namespace OOPDraw
         {
 
         }
-        public void Draw(Graphics g)
+        public override void Draw(Graphics g)
         {
             g.DrawLine(Pen, X1, Y1, X2, Y2);
         }
-        public void GrowTo(int x2, int y2)
+        public override void GrowTo(int x2, int y2)
         {
             X2 = x2;
             Y2 = y2;

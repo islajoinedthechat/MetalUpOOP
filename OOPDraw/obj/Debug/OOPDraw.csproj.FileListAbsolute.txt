@@ -18,3 +18,13 @@
 \\ran\qe2root\QE2StudentDocs\Cohort_2009\09IslaSpencer\Documents\Programming 2021\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.csproj.CoreCompileInputs.cache
 \\ran\qe2root\QE2StudentDocs\Cohort_2009\09IslaSpencer\Documents\Programming 2021\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.exe
 \\ran\qe2root\QE2StudentDocs\Cohort_2009\09IslaSpencer\Documents\Programming 2021\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.pdb
+C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\bin\Debug\OOPDraw.exe.config
+C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\bin\Debug\OOPDraw.exe
+C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\bin\Debug\OOPDraw.pdb
+C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.csproj.AssemblyReference.cache
+C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.OOPDraw.resources
+C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.Properties.Resources.resources
+C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.csproj.GenerateResource.cache
+C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.csproj.CoreCompileInputs.cache
+C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.exe
+C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.pdb
