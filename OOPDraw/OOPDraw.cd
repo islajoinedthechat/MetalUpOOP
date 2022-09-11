@@ -8,17 +8,37 @@
     </TypeIdentifier>
   </Class>
   <Class Name="OOPDraw.Line">
-    <Position X="3" Y="3.75" Width="1.5" />
+    <Position X="1.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Line.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OOPDraw.Rectangle">
-    <Position X="5.5" Y="3.75" Width="1.5" />
+    <Position X="6" Y="3.5" Width="1.5" />
+    <InheritanceLine Type="OOPDraw.Shape" ManuallyRouted="true">
+      <Path>
+        <Point X="5.5" Y="3.979" />
+        <Point X="6" Y="3.979" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>rectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPDraw.Ellipse">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ellipse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OOPDraw.Circle">
+    <Position X="1.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>rectangle.cs</FileName>
+      <FileName>Circle.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

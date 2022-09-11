@@ -28,3 +28,13 @@ C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.csproj.GenerateR
 C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.csproj.CoreCompileInputs.cache
 C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.exe
 C:\Users\Isla\Source\Repos\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.pdb
+C:\Users\Isla\Source\Repos\islajoinedthechat\MetalUpOOP\OOPDraw\bin\Debug\OOPDraw.exe.config
+C:\Users\Isla\Source\Repos\islajoinedthechat\MetalUpOOP\OOPDraw\bin\Debug\OOPDraw.exe
+C:\Users\Isla\Source\Repos\islajoinedthechat\MetalUpOOP\OOPDraw\bin\Debug\OOPDraw.pdb
+C:\Users\Isla\Source\Repos\islajoinedthechat\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.csproj.AssemblyReference.cache
+C:\Users\Isla\Source\Repos\islajoinedthechat\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.OOPDraw.resources
+C:\Users\Isla\Source\Repos\islajoinedthechat\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.Properties.Resources.resources
+C:\Users\Isla\Source\Repos\islajoinedthechat\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.csproj.GenerateResource.cache
+C:\Users\Isla\Source\Repos\islajoinedthechat\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.csproj.CoreCompileInputs.cache
+C:\Users\Isla\Source\Repos\islajoinedthechat\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.exe
+C:\Users\Isla\Source\Repos\islajoinedthechat\MetalUpOOP\OOPDraw\obj\Debug\OOPDraw.pdb

@@ -29,7 +29,7 @@ namespace OOPDraw
         }
         public abstract void Draw(Graphics g);
 
-        public void GrowTo(int x2, int y2)
+        public virtual void GrowTo(int x2, int y2)
         {
             X2 = x2;
             Y2 = y2;

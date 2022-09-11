@@ -42,9 +42,10 @@ namespace OOPDraw
             // Canvas
             // 
             this.Canvas.BackColor = System.Drawing.SystemColors.Window;
-            this.Canvas.Location = new System.Drawing.Point(412, 6);
+            this.Canvas.Location = new System.Drawing.Point(618, 9);
+            this.Canvas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Canvas.Name = "Canvas";
-            this.Canvas.Size = new System.Drawing.Size(1138, 627);
+            this.Canvas.Size = new System.Drawing.Size(1707, 965);
             this.Canvas.TabIndex = 0;
             this.Canvas.TabStop = false;
             this.Canvas.Paint += new System.Windows.Forms.PaintEventHandler(this.Canvas_Paint);
@@ -59,18 +60,20 @@ namespace OOPDraw
             "Thin",
             "Medium",
             "Thick"});
-            this.LineWidth.Location = new System.Drawing.Point(60, 41);
+            this.LineWidth.Location = new System.Drawing.Point(90, 63);
+            this.LineWidth.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.LineWidth.Name = "LineWidth";
-            this.LineWidth.Size = new System.Drawing.Size(121, 21);
+            this.LineWidth.Size = new System.Drawing.Size(180, 28);
             this.LineWidth.TabIndex = 1;
             this.LineWidth.SelectedIndexChanged += new System.EventHandler(this.LineWidth_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 22);
+            this.label1.Location = new System.Drawing.Point(90, 34);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(84, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Line Width";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -78,9 +81,10 @@ namespace OOPDraw
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 107);
+            this.label2.Location = new System.Drawing.Point(90, 165);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(55, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Colour";
             // 
@@ -95,9 +99,10 @@ namespace OOPDraw
             "Blue",
             "Purple",
             "Black"});
-            this.Colour.Location = new System.Drawing.Point(60, 124);
+            this.Colour.Location = new System.Drawing.Point(90, 191);
+            this.Colour.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Colour.Name = "Colour";
-            this.Colour.Size = new System.Drawing.Size(121, 21);
+            this.Colour.Size = new System.Drawing.Size(180, 28);
             this.Colour.TabIndex = 4;
             this.Colour.SelectedIndexChanged += new System.EventHandler(this.Colour_SelectedIndexChanged);
             // 
@@ -106,26 +111,30 @@ namespace OOPDraw
             this.Shape.FormattingEnabled = true;
             this.Shape.Items.AddRange(new object[] {
             "Line",
-            "Rectangle"});
-            this.Shape.Location = new System.Drawing.Point(60, 208);
+            "Rectangle",
+            "Ellipse",
+            "Circle"});
+            this.Shape.Location = new System.Drawing.Point(90, 320);
+            this.Shape.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Shape.Name = "Shape";
-            this.Shape.Size = new System.Drawing.Size(121, 21);
+            this.Shape.Size = new System.Drawing.Size(180, 28);
             this.Shape.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 189);
+            this.label3.Location = new System.Drawing.Point(90, 291);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(56, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Shape";
             // 
             // OOPDraw
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 645);
+            this.ClientSize = new System.Drawing.Size(1924, 992);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Shape);
             this.Controls.Add(this.Colour);
@@ -133,6 +142,7 @@ namespace OOPDraw
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LineWidth);
             this.Controls.Add(this.Canvas);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "OOPDraw";
             this.Text = "OOPDraw";
             this.Load += new System.EventHandler(this.OOPDraw_Load);
