@@ -21,12 +21,15 @@ namespace OOPDraw
         }
         public override void Draw(Graphics g)
         {
-            int x = Math.Min(X1, X2);
-            int y = Math.Min(Y1, Y2);
-            int w = Math.Max(X1, X2) - x;
-            int h = Math.Max(Y1, Y2) - y;
+            (int x, int y, int w, int h) = EnclosingRectangle();
             g.DrawRectangle(Pen, x, y, w, h);
 
+        }
+        public bool FullySurrounds(Shape s)
+        {
+            (int x, int y, int w, int h) = this.EnclosingRectangle();
+            (int xs, int ys, int ws, int hs) = s.EnclosingRectangle();
+            return x < xs && y < ys && x + w > xs + ws && y + h > ys + hs;
         }
 
     }

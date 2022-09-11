@@ -19,6 +19,7 @@ namespace OOPDraw
             LineWidth.SelectedItem = "Medium";
             Colour.SelectedItem = "Green";
             Shape.SelectedItem = "Line";
+            ActionBox.SelectedItem = "Draw";
         }
 
         Pen currentPen = new Pen(Color.Black);
@@ -26,7 +27,19 @@ namespace OOPDraw
         Point startOfDrag = Point.Empty;
         Point lastMousePosition = Point.Empty;
         private List<Shape> shapes = new List<Shape>();
-        
+        Rectangle selectionBox;
+
+        private List<Shape> GetSelectedShapes()
+        {
+            return shapes.Where(s => s.Selected).ToList();
+        }
+        private void MoveSelectedShapes(MouseEventArgs e)
+        {
+            foreach (Shape s in GetSelectedShapes())
+            {
+                s.MoveBy(e.X - lastMousePosition.X, e.Y - lastMousePosition.Y);
+            }
+        }
         private void Canvas_Paint(object sender, PaintEventArgs e)
         {
             Graphics gr = e.Graphics;
@@ -35,8 +48,8 @@ namespace OOPDraw
                 shape.Draw(gr);
             }
 
+            if (selectionBox != null) selectionBox.Draw(gr);
 
-            
         }
 
         private void OOPDraw_Load(object sender, EventArgs e)
@@ -48,6 +61,26 @@ namespace OOPDraw
         {
             dragging = true;
             startOfDrag = lastMousePosition = e.Location;
+            switch(ActionBox.Text)
+            {
+                case "Draw":
+                    AddShape(e);
+                    break;
+                case "Select":
+                    Pen p = new Pen(Color.Black, 1.0F);
+                    selectionBox = new Rectangle(p, startOfDrag.X, startOfDrag.Y);
+                    break;
+            }
+            if (ActionBox.Text == "Draw")
+            {
+                AddShape(e);
+            }
+
+        }
+
+        private void AddShape(MouseEventArgs e)
+        {
+            
             switch (Shape.Text)
             {
                 case "Line":
@@ -63,14 +96,29 @@ namespace OOPDraw
                     shapes.Add(new Circle(currentPen, e.X, e.Y));
                     break;
             }
+
         }
 
         private void Canvas_MouseMove(object sender, MouseEventArgs e)
         {
             if (dragging)
             {
-                Shape shape = shapes.Last();
-                shape.GrowTo(e.X, e.Y);
+                
+                switch (ActionBox.Text)
+                {
+                    case "Move":
+                        MoveSelectedShapes(e);
+                        break;
+                    case "Draw":
+                        Shape shape = shapes.Last();
+                        shape.GrowTo(e.X, e.Y);
+                        break;
+                    case "Select":
+                        selectionBox.GrowTo(e.X, e.Y);
+                        SelectShapes();
+                        break;
+                    
+                }
                 lastMousePosition = e.Location;
                 Refresh();
             }
@@ -79,6 +127,9 @@ namespace OOPDraw
         private void Canvas_MouseUp(object sender, MouseEventArgs e)
         {
             dragging = false;
+            lastMousePosition = Point.Empty;
+            selectionBox = null;
+            Refresh();
         }
 
         private void LineWidth_SelectedIndexChanged(object sender, EventArgs e)
@@ -109,7 +160,7 @@ namespace OOPDraw
             Color color = currentPen.Color;
             switch (Colour.Text)
             {
-                
+
                 case "Red":
                     color = Color.Red;
                     break;
@@ -131,9 +182,34 @@ namespace OOPDraw
                 case "Black":
                     color = Color.Black;
                     break;
+                case "Brown":
+                    color = Color.Brown;
+                    break;
 
             }
             currentPen = new Pen(color, currentPen.Width);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeselectAll()
+        {
+            foreach (Shape s in shapes)
+            {
+                s.Deselect();
+            }
+        }
+
+        private void SelectShapes()
+        {
+            DeselectAll();
+            foreach (Shape s in shapes)
+            {
+                if (selectionBox.FullySurrounds(s)) s.Select();
+            }
         }
     }
 }

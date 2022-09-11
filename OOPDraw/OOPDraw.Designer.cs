@@ -36,6 +36,8 @@ namespace OOPDraw
             this.Colour = new System.Windows.Forms.ComboBox();
             this.Shape = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.ActionBox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Canvas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,7 +100,8 @@ namespace OOPDraw
             "Green",
             "Blue",
             "Purple",
-            "Black"});
+            "Black",
+            "Brown"});
             this.Colour.Location = new System.Drawing.Point(90, 191);
             this.Colour.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Colour.Name = "Colour";
@@ -130,11 +133,35 @@ namespace OOPDraw
             this.label3.TabIndex = 6;
             this.label3.Text = "Shape";
             // 
+            // ActionBox
+            // 
+            this.ActionBox.FormattingEnabled = true;
+            this.ActionBox.Items.AddRange(new object[] {
+            "Draw",
+            "Move",
+            "Select"});
+            this.ActionBox.Location = new System.Drawing.Point(90, 425);
+            this.ActionBox.Name = "ActionBox";
+            this.ActionBox.Size = new System.Drawing.Size(180, 28);
+            this.ActionBox.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(90, 393);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Action";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // OOPDraw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 992);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.ActionBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Shape);
             this.Controls.Add(this.Colour);
@@ -161,6 +188,8 @@ namespace OOPDraw
         private System.Windows.Forms.ComboBox Colour;
         private System.Windows.Forms.ComboBox Shape;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox ActionBox;
+        private System.Windows.Forms.Label label4;
     }
 }
 
